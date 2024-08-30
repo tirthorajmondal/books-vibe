@@ -1,0 +1,98 @@
+[
+    {
+        "bookId": 2001,
+        "bookName": "Spark: How to Lead Yourself and Others to Greater Success",
+        "author": "Angie Morgan",
+        "image": "https://pngimg.com/uploads/book/book_PNG51049.png",
+        "review": "An insightful guide on leadership and personal development.",
+        "totalPages": 351,
+        "rating": 4.5,
+        "category": "Self-help",
+        "tags": [
+            "Leadership",
+            "Personal Development"
+        ],
+        "publisher": "Harper Business",
+        "yearOfPublishing": 2017
+    },
+    {
+        "bookId": 2002,
+        "bookName": "The Silent Patient",
+        "author": "Alex Michaelides",
+        "image": "https://pngimg.com/uploads/book/book_PNG51049.png",
+        "review": "A gripping psychological thriller that keeps you on the edge.",
+        "totalPages": 336,
+        "rating": 4.3,
+        "category": "Thriller",
+        "tags": [
+            "Suspense",
+            "Psychological"
+        ],
+        "publisher": "Celadon Books",
+        "yearOfPublishing": 2019
+    },
+    {
+        "bookId": 2003,
+        "bookName": "Becoming",
+        "author": "Michelle Obama",
+        "image": "https://pngimg.com/uploads/book/book_PNG51049.png",
+        "review": "A deeply personal and inspiring memoir from the former First Lady.",
+        "totalPages": 448,
+        "rating": 4.8,
+        "category": "Biography",
+        "tags": [
+            "Memoir",
+            "Inspiration"
+        ],
+        "publisher": "Crown Publishing Group",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 2004,
+        "bookName": "Educated: A Memoir",
+        "author": "Tara Westover",
+        "image": "https://pngimg.com/uploads/book/book_PNG51049.png",
+        "review": "A powerful account of overcoming adversity through education.",
+        "totalPages": 334,
+        "rating": 4.7,
+        "category": "Biography",
+        "tags": [
+            "Memoir",
+            "Education"
+        ],
+        "publisher": "Random House",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 2005,
+        "bookName": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+        "author": "James Clear",
+        "image": "https://pngimg.com/uploads/book/book_PNG51049.png",
+        "review": "A practical guide to habit formation and personal improvement.",
+        "totalPages": 320,
+        "rating": 4.9,
+        "category": "Self-help",
+        "tags": [
+            "Habits",
+            "Productivity"
+        ],
+        "publisher": "Avery",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 2006,
+        "bookName": "Where the Crawdads Sing",
+        "author": "Delia Owens",
+        "image": "https://pngimg.com/uploads/book/book_PNG51049.png",
+        "review": "A beautifully written mystery set in the marshlands of North Carolina.",
+        "totalPages": 384,
+        "rating": 4.7,
+        "category": "Fiction",
+        "tags": [
+            "Mystery",
+            "Literary Fiction"
+        ],
+        "publisher": "G.P. Putnam's Sons",
+        "yearOfPublishing": 2018
+    }
+]
