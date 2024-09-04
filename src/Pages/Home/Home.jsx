@@ -4,10 +4,8 @@ import Books from "../../components/Books/Books";
 const Home = () => {
     return (
         <div>
-            <Banner/>
-            <div className="">
-                <Books></Books>
-            </div>
+            <Banner />
+            <Books></Books>
         </div>
     );
 };

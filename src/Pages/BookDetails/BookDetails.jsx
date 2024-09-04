@@ -15,49 +15,68 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === idInt);
 
     // console.log(book);
-    const { image, bookName, author, review, totalPages, rating, category, tags } = book;
+    const { image, bookName, author, review, totalPages, publisher, yearOfPublishing, rating, category, tags } = book;
 
     const handleRead = book => {
         saveBooks(book);
-        
-        toast.success('Successfully added to Read');
     }
 
     const handleWishlist = book => {
         // console.log(book);
-        toast.success('Successfully added to Wishlist')
+        // toast.success('Successfully added to Wishlist')
     }
 
 
 
     return (
-        <div className="flex bg-base-100 shadow-xl border-2 p-8">
-            <figure className="py-8 bg-slate-100 mb-3 rounded-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 bg-base-100  max-h-[calc(100vh-120px)]">
+            <figure className="py-8 bg-ashback flex justify-center  rounded-xl">
                 <img
                     src={image || bookImage}
-
+                    width={300}
                     alt={bookName} />
             </figure>
-            <div className="">
-                <ul className="font-semiboldbold">
-                    {
-                        tags.map(tag => <span className="mr-3 p-2 px-3 bg-slate-200 rounded-3xl my-3" key={tag}>{tag}</span>)
-                    }
-                </ul>
-                <div className="card-body p-0">
-                    <h2 className="card-title">{bookName}</h2>
-                    <p>By: {author}</p>
-                    <hr className="border-dashed border-4 border-y-2 border-spacing-x-6 border-black" />
-                    <div className="flex justify-between">
-                        <p>{category}</p>
-                        <p>{rating}</p>
-                    </div>
+            <div className="max-w-max mx-auto">
+                <div className=" p-0">
+                    <h2 className="text-4xl font-bold mb-5">{bookName}</h2>
+                    <p className='text-xl text-black80'>By: {author}</p>
+                    <hr className="border-dashed border-t-2 border-black60 mt-3" />
+                    <p className='font-medium text-lg text-black80 my-3'>{category}</p>
+                    <hr className="border-dashed border-t-2 border-black60 mb-3" />
+                    <p className='text-[#131313B3]'><span className='font-bold text-xl text-black100'>Review: </span> {review}</p>
+
+                    <ul className="font-semiboldbold my-5">
+                        <span className='font-bold mr-5'>Tag</span>
+                        {
+                            tags.map(tag => <span className="mr-3 p-2 px-3 rounded-3xl my-3 bg-ashback text-first font-medium" key={tag}>#{tag}</span>)
+                        }
+                    </ul>
+                    <table className='mb-4'>
+                        <thead className=''>
+                            <tr>
+                                <td className='font-semibold text-black60'>Number of Pages:</td>
+                                <td className='font-semibold text-black100m pl-5'>{totalPages}</td>
+                            </tr>
+                            <tr>
+                                <td className='font-semibold text-black60'>Publisher:</td>
+                                <td className='font-semibold text-black100m pl-5'>{publisher}</td>
+                            </tr>
+                            <tr>
+                                <td className='font-semibold text-black60'>Year of Publishing:</td>
+                                <td className='font-semibold text-black100m pl-5'>{yearOfPublishing}</td>
+                            </tr>
+                            <tr>
+                                <td className='font-semibold text-black60'>Rating:</td>
+                                <td className='font-semibold text-black100m pl-5'>{rating}</td>
+                            </tr>
+                        </thead>
+                    </table>
                 </div>
-                <div className="flex gap-3">
-                    <button onClick={() => handleRead(book)} className="btn btn-primary">Read</button>
-                    <button onClick={() => handleWishlist(book)} className="btn btn-secondary">Wishlist</button>
+                <div className="flex gap-3 mb-3 lg:mb-0">
+                    <button onClick={() => handleRead(book)} className="btn btn-ghost border border-black60 px-6  rounded-lg">Read</button>
+                    <button onClick={() => handleWishlist(book)} className="btn bg-second  px-6 text-white100">Wishlist</button>
                     <ToastContainer
-                    autoClose={2000}></ToastContainer>
+                        autoClose={2000}></ToastContainer>
                 </div>
             </div>
         </div>
