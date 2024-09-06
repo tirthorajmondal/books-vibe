@@ -9,7 +9,7 @@ const ReadCard = ({ book }) => {
     const { bookId, image, bookName, author, review, totalPages, publisher, yearOfPublishing, rating, category, tags } = book;
 
     return (
-        <div  className="card gap-16 flex-row bg-base-100 shadow-xl border-ashback border-2 p-6">
+        <div className="card gap-16 flex-row bg-base-100 shadow-xl border-ashback border-2 p-6">
             <figure className="p-8 bg-ashback mb-3 rounded-xl">
                 <img
                     src={image || bookImage}

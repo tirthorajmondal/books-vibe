@@ -17,15 +17,15 @@ const ShortBy = () => {
             </button>
 
             <div id="dropdown" className={`z-10 ${isHide ? 'hidden' : ''} bg-white100 divide-y divide-gray-100 `}>
-                <ul className="py-2 text-sm text-center text-gray-700 " aria-labelledby="dropdownDefaultButton">
+                <ul className="py-2 text-sm text-center" aria-labelledby="dropdownDefaultButton">
                     <li className='border-2 border-ashback mb-px rounded-lg'>
-                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
+                        <a href="#" className="block px-4 py-2 font-semibold ">Rating</a>
                     </li>
                     <li className='border-2 border-ashback mb-px rounded-lg'>
-                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Settings</a>
+                        <a href="#" className="block px-4 py-2 font-semibold ">Number of Pages</a>
                     </li>
                     <li className='border-2 border-ashback mb-px rounded-lg'>
-                        <a href="#" className="block px-4 py-2 hover:bg-gray-100">Earnings</a>
+                        <a href="#" className="block px-4 py-2 font-semibold">Publishing Year</a>
                     </li>
 
                 </ul>

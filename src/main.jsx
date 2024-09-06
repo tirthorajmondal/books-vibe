@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             element:<ReadContainer></ReadContainer>
           },
           {
-            path:'whishlist',
+            path:'wishlist',
             element:<WishlistContainer></WishlistContainer>
           }
         ]

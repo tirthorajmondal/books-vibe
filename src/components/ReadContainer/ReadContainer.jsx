@@ -1,13 +1,17 @@
+import { useEffect } from 'react';
 import ReadCard from '../../components/ReadCard/ReadCard';
 
 const ReadContainer = () => {
+    const localBooks = JSON.parse(localStorage.getItem('read'));
+    const books = localBooks || [];
 
-    const books = JSON.parse(localStorage.getItem('read'));
+    useEffect(() => {
+    }, [])
 
     return (
-        <div className="grid gap-5">
+        <div className="grid gap-5 mb-5">
             {
-                books.map(book => <ReadCard key={book.bookId} book={book} />)
+                books.length > 0 && (books.map(book => <ReadCard key={book.bookId} book={book} />))
             }
         </div>
     );

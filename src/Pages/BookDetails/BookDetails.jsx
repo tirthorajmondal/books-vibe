@@ -2,7 +2,7 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { getBooks, saveBooks } from '../../utils';
+import { getBooks, saveBooks, saveToWishlist } from '../../utils';
 
 
 const BookDetails = () => {
@@ -15,15 +15,14 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === idInt);
 
     // console.log(book);
-    const { image, bookName, author, review, totalPages, publisher, yearOfPublishing, rating, category, tags } = book;
+    const {bookId, image, bookName, author, review, totalPages, publisher, yearOfPublishing, rating, category, tags } = book;
 
     const handleRead = book => {
         saveBooks(book);
     }
 
     const handleWishlist = book => {
-        // console.log(book);
-        // toast.success('Successfully added to Wishlist')
+        saveToWishlist(book);
     }
 
 
