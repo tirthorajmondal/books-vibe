@@ -28,7 +28,7 @@ const BookDetails = () => {
 
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 bg-base-100  max-h-[calc(100vh-120px)]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 bg-base-100  max-h-[calc(100vh-140px)] -mt-3">
             <figure className="py-8 bg-ashback flex justify-center  rounded-xl">
                 <img
                     src={image || bookImage}
